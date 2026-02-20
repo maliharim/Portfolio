@@ -1,7 +1,7 @@
 body {
     margin: 0;
     min-height: 100vh;
-    background: linear-gradient(135deg, rgb(137, 191, 229), rgb(162, 197, 249), #4d8fc5);
+    background: linear-gradient(#E1D9BC);
     background-size: 200% 200%;
     animation: bgShine 10s ease infinite;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif sans-serif;
@@ -14,11 +14,11 @@ body {
 
 .sidebar {
     position: fixed;
-    width: 180px;
+    width: 200px;
     height: 100%;
-    background-color: #04084d;
+    background-color: #30364F;
     color: white;
-    padding: 30px;
+    padding: 20px;
 }
 
 .sidebar h2 {
@@ -27,56 +27,65 @@ body {
 
 .sidebar a {
     display: block;
-    color: white;
-    text-decoration: none;
+    color: #E1D9BC;
+    text-decoration: underline;
+    font-family: 'Times New Roman', Times, serif;
     margin: 15px 0;
 }
 
 .sidebar a:hover {
     background-color: #575757;
     padding-left: 20px;
-     color: #ffcc00;
-    transform: scale(1.1);
+    color: #ffcc00;
 }
 
 .main {
-    margin-left: 500px;
-    padding: 20px;
-
+    margin-left: 250px;
+    padding: 50px;
 }
 
 .welcome-section {
-    position: relative;   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
 }
 
-.welcome {
-    position: relative; 
-    top: -10px;             
-    left: 68px;            
-    
-    font-family: 'Times New Roman', Times, serif, serif;  
-    font-size: 35px;
-    font-weight: 700;
-    letter-spacing: 2px;
-    text-align: left;
-    
-    background: linear-gradient(90deg,navy,navy, #021d34);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-    -webkit-text-stroke: 1px rgba(0,0,0,0.3); 
-    background-size: 200% 100%;
-    animation: shineText 5s ease-in-out infinite;
-}
-.sub-welcome{
+
+.photo-wrapper {
     position: relative;
-    top: -27px;        
-    left: 70px;     
+    top: -45px;
+    width: 220px;
+    height: 280px;
+    border-radius: 20px;
+    padding: 6px;
+    background: linear-gradient(#30364F);
+    background-size: 400% 400%;
+    animation: shine 4s ease infinite;
+}
+@keyframes shine {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+.profile {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    object-fit: cover;
 
-    font-size: 16px;
-    font-family: 'Times New Roman', Georgia, 'Times New Roman', Times, serif, serif;
-    color: #444;
-    letter-spacing: 1px;
+}
+
+
+.text-area {
+    max-width: 500px;
+}
+
+.sub-welcome {
+    font-size: 14px;
+    color: #333;
+    letter-spacing: 2px;
 }
 @keyframes shineText {
     0% { background-position: 200% 0; }
@@ -84,36 +93,34 @@ body {
     100% { background-position: 200% 0; }
 }
 
-.photo-wrapper {
-    position: relative;
-    width: 140px;   
-    height: 180px;  
-    top: -20px;
-    right: -100px;  
-    border-radius: 50% / 50%;  
-    padding: 5px;  
-    background: linear-gradient(45deg,  #3fa7fc,white, #04084d, #3fa7fc);
-    background-size: 400% 400%;
-    animation: shine 4s ease infinite;
+.welcome {
+    font-size: 45px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    margin: 10px 0;
+    background: linear-gradient(90deg, #30364F, #0f0d04);
+     -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color : transparent;
 }
 
-.profile {
-    width: 100%;
-    height: 100%;
-    border-radius: 50% / 50%;
-    display: block;
-}
-@keyframes shine {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
+.role {
+    font-size: 18px;
+    color: #222;
+    margin-bottom: 15px;
 }
 
+.about-me {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #333;
+}
 
 .social-icons {
     text-align: center;
-    margin-left: -380px;
-     margin-top: -130px;
+    margin-left: -150px;
+     margin-top: -100px;
    
       
 }
@@ -121,14 +128,14 @@ body {
 .social-icons a {
     font-size: 20px;
     margin: 0 10px;
-    color: navy;
+    color: #30364F;
     text-decoration: none;
      transition: color 0.4s ease;
 
 }
 
 .social-icons a:hover {
-    color: blue;
+    color: #30364F;
 }
 .resume-btn {
     display: inline-block;
@@ -138,16 +145,15 @@ body {
     font-weight: 600;
     font-family: 'Playfair Display', serif; 
     color: white;
-    background: navy  ;               
-    border: 2px solid navy;           
+    background: #30364F  ;               
+    border: 2px solid #ACBAC4;           
     border-radius: 35px;                  
     text-decoration: none;
     position: relative;
     right: -120px;
-    top: -140px;
+    top: -110px;
     overflow: hidden;
-    box-shadow: 0 6px 15px rgba(255,106,0,0.4); 
-    transition: 0.4s ease;
+
 }
 
 
@@ -177,37 +183,17 @@ body {
     color: #fff;
 }
 
-.contact-title {
-    font-size: 55px; 
-    font-family: 'Playfair Display', serif;
-    font-weight: 700;
-    letter-spacing: 2px;
-    text-align: left;
 
-    background: linear-gradient(90deg, navy, #3fa7fc, #00ffff, #3fa7fc);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 
-    text-shadow: 2px 2px 6px rgba(0,0,0,0.3);
-    -webkit-text-stroke: 1px rgba(0,0,0,0.3);
-
-    background-size: 200% 100%;
-    animation: shineText 5s ease-in-out infinite;
-
-    margin-bottom: 20px;
-}
 
 .contact-sub {
+    font: times new roman , serif;
+    position: relative;   
+    left: 370px; 
+    top: -20px;          
     font-size: 16px;
-    color: #ddd;
+    color: #0e0202;
     margin-bottom: 30px;
-}
-
-
-@keyframes shineText {
-    0% { background-position: 200% 0; }
-    50% { background-position: 0% 0; }
-    100% { background-position: 200% 0; }
 }
 
 
@@ -216,12 +202,14 @@ body {
     flex-direction: column;
     gap: 15px;  
     position: relative;
-    left: -125px;
+    left: -8px;
+    top: -30px;
 }
 
 
 .contact-form input,
 .contact-form textarea {
+    position: relative;
     padding: 12px 15px;
     border-radius: 20px;
     border: 2px solid rgba(255,255,255,0.3);
@@ -258,7 +246,7 @@ body {
     font-family: 'Playfair Display', serif;
     font-weight: 700;
     color: white;
-    background: linear-gradient(135deg,navy,navy);
+    background: linear-gradient(#30364F);
     border: none;
     border-radius: 35px;
     cursor: pointer;
@@ -269,28 +257,4 @@ body {
 .contact-form button:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(31, 19, 11, 0.6);
-}
-.contact-title {
-    position: relative;   
-    left: 50px;           
-    font-size: 55px;
-    font-family: 'Playfair Display', serif;
-    font-weight: 700;
-    letter-spacing: 2px;
-    text-align: left;
-    background: linear-gradient(90deg, navy, #0b3253, #010909, #3fa7fc);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-shadow: 2px 2px 6px rgba(0,0,0,0.3);
-    -webkit-text-stroke: 1px rgba(0,0,0,0.3);
-    background-size: 200% 100%;
-    animation: shineText 5s ease-in-out infinite;
-}
-
-.contact-sub {
-    position: relative;   
-    left: 140px;           
-    font-size: 16px;
-    color: #0e0202;
-    margin-bottom: 30px;
 }
