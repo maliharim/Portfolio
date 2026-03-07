@@ -3,65 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maliha Portfolio</title>
+    <title>Fashion Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
+<script>
+    const leftArrow = document.querySelector('.left-arrow');
+    const rightArrow = document.querySelector('.right-arrow');
+
+    leftArrow.onclick = () => {
+        alert("Previous Slide (Add your logic here!)");
+        // Example: change image or text
+    };
+
+    rightArrow.onclick = () => {
+        alert("Next Slide (Add your logic here!)");
+    };
+</script>
+
 <body>
+    <a href="contact.html" class="jump-arrow left-arrow">〈</a>
+    <a href="skills.html" class="jump-arrow right-arrow">〉</a>
 
-<div class="sidebar">
-    <h2>Portfolio</h2>
-    <a href="index.html">Welcome</a>
-    <a href="contact.html">Contact Me</a>
-</div>
+    <div class="bg-shape-1"></div>
+    <div class="bg-shape-2"></div>
 
-<div class="main">
-
-    <div class="welcome-section">
-
-        <!-- PHOTO -->
-        <div class="photo-wrapper">
-            <img src="photo.bmp" alt="Maliha" class="profile">
+    <nav>
+        <div class="logo">
+            <span class="diamond-icon">◆</span> My Portfolio
         </div>
+        <ul class="nav-links">
+          <li class="active"><a href="index.html">ABOUT ME</a></li>
+         <li><a href="skills.html">SKILLS</a></li>
+         <li><a href="projects.html">PROJECTS</a></li>
+           <li><a href="resume.html">RESUME</a></li>
+         <li><a href="contact.html">CONTACT</a></li>
+         
+        </ul>
+        <div class="nav-icons">
+            <span class="user">👤</span>
+            <span class="university">🎓</span>
+        
+          
+        </div>
+    </nav>
 
-        <!-- TEXT -->
-        <div class="text-area">
-            <p class="sub-welcome">My Portfolio</p>
+    <main class="hero-container">
 
-            <h1 class="welcome">
-                MALIHA <br> MOHAMMED
-            </h1>
-
-            <h3 class="role">A Journey Through Creativity 
-            & Code</h3>
-
-            <p class="about-me">
-                I am a motivated individual with a strong passion for creativity and technology. I enjoy solving challenges, designing with purpose, and transforming ideas into meaningful projects. Alongside my technical interests, I actively engage in artistic and creative pursuits and continuously work on developing new skills that contribute to both personal growth and impactful creation.
-            </p>
-
-            <!-- Resume Button -->
-            <a href="resume.pdf" target="_blank" class="resume-btn">View My Resume</a>
-
-            <!-- Social Icons -->
-            <div class="social-icons">
-                <a href="https://www.facebook.com/share/1ABFajxKgp/?mibextid=wwXIfr" target="_blank">
-                    <i class="fa-brands fa-facebook"></i>
-                </a>
-                <a href="https://www.instagram.com/malihaa_rim" target="_blank">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-                <a href="https://github.com/maliharim" target="_blank">
-                    <i class="fa-brands fa-github"></i>
-                </a>
+       <section class="content">
+    <h1>A Journey Through
+         Creativity & Code 🎓
+        </h1>
+    <p> I am a motivated individual with a strong passion for creativity and technology. I enjoy solving challenges, designing with purpose, and transforming ideas into meaningful projects. Alongside my technical interests, I actively engage in artistic and creative pursuits and continuously work on developing new skills that contribute to both personal growth and impactful creation.
+</p>
+    
+    <div class="social-group">
+        <a href="https://github.com/" target="_blank" class="social-icon">GH</a>
+        <a href="https://facebook.com/" target="_blank" class="social-icon">FB</a>
+        <a href="mailto:your@email.com" class="social-icon">✉</a>
+        <a href="https://instagram.com/" target="_blank" class="social-icon">IG</a>
             </div>
+        </section>
 
-        </div>
-
-    </div>
-
-</div>
-
+    
+        <section class="image-area">
+            
+            <div class="image-wrapper">
+                <img src="c:\Users\Maliha Reem\Downloads\photo.jpeg" alt="About Me">
+            </div>
+           
+        </section>
+    </main>
+    
 
 </body>
 </html>

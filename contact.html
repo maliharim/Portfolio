@@ -3,31 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Me - Maliha Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <title>Contact Me</title>
 </head>
-<body>
+<body class="color-bg"> <div class="bg-shape-1"></div>
+    <div class="bg-shape-2"></div>
 
-    <!-- Sidebar -->
-    <div class="sidebar">
-        <h2>Portfolio</h2>
-        <a href="index.html">Welcome</a>
-        <a href="contact.html">Contact Me</a>
-    </div>
+    <a href="resume.html" class="jump-arrow left-arrow">〈</a>
+        <a href="index.html" class="jump-arrow right-arrow">〉</a>
 
-    <div class="main">
-  
+    <nav>
+        <div class="logo"><span class="diamond-icon">◆</span> My Portfolio</div>
+        <ul class="nav-links">
+            <li><a href="index.html">About Me</a></li>
+            <li><a href="skills.html">SKILLS</a></li>
+            <li><a href="projects.html">PROJECTS</a></li>
+            <li><a href="resume.html">RESUME</a></li>
+            <li class="active"><a href="contact.html">CONTACT</a></li>
+        </ul>
+        <div class="nav-icons">
+            <span class="user">👤</span>
+            <span class="university">🎓</span>
+        
+          
+        </div>
+    </nav>
 
-    <p class="contact-sub">Feel free to reach out!</p>
+    <a href="projects.html" class="jump-arrow left-arrow">〈</a>
 
-    <form class="contact-form">
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <textarea placeholder="Write your message here" required></textarea>
-        <button type="submit">Send</button>
-    </form>
-    </div>
-   
+   <main class="hero-container contact-layout-fix">
+    <section class="content">
+        <h1>Get In Touch</h1>
+        <p>I am always open to discussing new projects, creative ideas, or opportunities.</p>
+        
+        <div class="contact-details">
+            <p><strong>Email:</strong> malihareem300@gmail.com</p>
+        </div>
+    </section>
+
+    <section class="image-area">
+         <form action="https://formspree.io/f/mwvrplkw" method="POST" class="contact-form">
+            
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Write your message..." rows="4" required></textarea>
+            
+            <button type="submit" class="btn-dark">SUBMIT</button>
+         </form>
+    </section>
+</main>
 
 </body>
 </html>
