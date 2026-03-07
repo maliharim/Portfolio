@@ -6,13 +6,14 @@
 }
 
 body {
-    background-color: #fdfaf7;
+    background-color: #fdfaf7; 
     overflow-x: hidden;
     height: 100vh;
     width : 100vw;
     overflow: hidden;
     font-family: 'Montserrat', sans-serif;
 }
+
 
 .bg-shape-1 {
     position: absolute;
@@ -37,6 +38,7 @@ body {
     opacity: 0.6;
 }
 
+/* --- Navigation --- */
 nav {
     display: flex;
     justify-content: space-between;
@@ -73,6 +75,7 @@ nav {
     color: #4a3728;
 }
 
+/* --- Hero Layout --- */
 .hero-container {
     display: flex;
     align-items: center;
@@ -81,6 +84,7 @@ nav {
     padding: 0 10%;
     height: calc(100vh - 120px);
     position: relative;
+    
 }
 
 .content {
@@ -95,6 +99,7 @@ nav {
     margin-top: -55px;
     margin-bottom: 20px;
     font-family: cinzel, serif;
+
 }
 
 .content p {
@@ -106,6 +111,7 @@ nav {
     line-height: 1.6;
 }
 
+/* --- Buttons --- */
 .btn-group {
     display: flex;
     gap: 20px;
@@ -131,31 +137,40 @@ button {
     color: white;
 }
 
+
 .hero-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 10%;
     height: 80vh;
-    gap: 100px;
+    gap: 100px;    
 }
+
 
 .content {
     flex: 1; 
-    min-width: 400px;
+    min-width: 400px; 
     z-index: 10;
 }
 
 .image-wrapper img {
-    width: 450px;
-    height: 320px;
-    object-fit: cover;
+   
+    width: 450px;       
+    height: 320px;      /
+    
+    
+    object-fit: cover;  
+    
     margin-top: -80px; 
+    
     border-radius: 4px;
     box-shadow: 20px 20px 60px rgba(0,0,0,0.1);
+    
     position: relative;
     z-index: 5;
 }
+
 
 .image-area {
     flex: 1;
@@ -184,7 +199,6 @@ button {
     align-items: flex-start;
     text-align: left;
 }
-
 .social-group {
     display: flex;
     gap: 15px;
@@ -195,10 +209,10 @@ button {
 .social-icon {
     width: 40px;
     height: 40px;
-    background-color: #6d5843;
+    background-color: #6d5843; 
     color: white;
     text-decoration: none;
-    border-radius: 50%;
+    border-radius: 50%; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -208,9 +222,10 @@ button {
     box-shadow: 0 4px 10px rgba(109, 88, 67, 0.2);
 }
 
+
 .social-icon:hover {
-    transform: translateY(-5px);
-    background-color: #9c7b5d;
+    transform: translateY(-5px); 
+    background-color: #9c7b5d; 
     box-shadow: 0 8px 15px rgba(109, 88, 67, 0.3);
 }
 
@@ -218,10 +233,13 @@ button {
     letter-spacing: 0;
 }
 
+
 .github:hover { background-color: #333; }
 .facebook:hover { background-color: #1877f2; }
 .email:hover { background-color: #ea4335; }
 .instagram:hover { background-color: #e4405f; }
+
+
 
 .section-content {
     text-align: center;
@@ -235,11 +253,12 @@ button {
     color: #4a3728;
 }
 
+
 .absolute-center-container {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); 
     width: 90%;
     max-width: 1000px;
     display: flex;
@@ -248,16 +267,17 @@ button {
     text-align: center;
 }
 
+
 .skills-master-wrapper {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); 
     width: 90%;
     max-width: 1000px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; /* Centers the "My Skills" Title */
 }
 
 .skills-main-title {
@@ -270,21 +290,20 @@ button {
 .skills-split-layout {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: flex-start; 
     gap: 60px;
     width: 100%;
 }
 
 .left-box {
-    margin-left: 100px;
-    text-align: right;
+    margin-left: 100px;  
+    text-align: right;   
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: flex-end; 
 }
-
 .skills-side-box {
-    flex: 1;
+    flex: 1; 
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -294,10 +313,12 @@ button {
 .skills-vertical-line {
     width: 1px;
     height: 250px;
+     
     background-color: rgba(62, 39, 35, 0.2);
-    margin-right: 100px;
-    align-self: center;
+    margin-right: 100px; 
+    align-self: center; 
 }
+
 
 .clean-skill-list {
     list-style: none;
@@ -311,7 +332,7 @@ button {
     color: #5d4037;
     position: relative;
     padding-left: 20px;
-    white-space: nowrap;
+    white-space: nowrap; 
 }
 
 .clean-skill-list li::before {
@@ -322,6 +343,7 @@ button {
     font-size: 0.8rem;
 }
 
+
 .skill-pill {
     background-color: #8d6e63;
     color: white;
@@ -331,13 +353,15 @@ button {
     font-weight: bold;
     letter-spacing: 1px;
 }
-
+/* Project Boxes Style */
+/* Ensure the background color is active */
 .color-bg {
     background-color: #fdfaf5;
     margin: 0;
     overflow: hidden;
 }
 
+/* THE FIX: Centering the Projects Layout */
 .projects-layout {
     display: flex;
     align-items: center;
@@ -348,9 +372,10 @@ button {
     margin: 0 auto;
 }
 
+
 .projects-display {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr
     gap: 20px;
     width: 100%;
 }
@@ -382,14 +407,17 @@ button {
     line-height: 1.4;
 }
 
+/* Arrow Fixes */
+
+/* --- THE UNIVERSAL NAV SYSTEM --- */
 .jump-arrow {
-    position: fixed;
+    position: fixed; /* Stays in the same spot on every page */
     top: 50%;
     transform: translateY(-50%);
     font-size: 2.5rem;
     color: #513b37;
     text-decoration: none;
-    z-index: 9999;
+    z-index: 9999; 
     width: 20px;
     height: 40px;
     display: flex;
@@ -403,6 +431,7 @@ button {
     transform: translateY(-50%) scale(1.2);
 }
 
+
 .left-arrow {
     left: 20px;
     right: auto;
@@ -412,6 +441,7 @@ button {
     right: 20px;
     left: auto;
 }
+
 
 .hero-container, .section-content {
     position: relative;
@@ -442,6 +472,7 @@ button {
 
 .btn-dark:hover { background-color: #C4A484; }
 
+
 .resume-preview-box {
     width: 450px;
     height: 250px;
@@ -451,7 +482,7 @@ button {
     align-items: center;
     justify-content: center;
     border: 1px solid rgba(196, 164, 132, 0.3);
-    box-shadow: 20px 20px 0px rgba(196, 164, 132, 0.2);
+    box-shadow: 20px 20px 0px rgba(196, 164, 132, 0.2); 
     border-radius: 12px;
 }
 
@@ -460,21 +491,24 @@ button {
 }
 
 .resume-page-fix {
-    justify-content: center !important;
-    gap: 20px !important;
+    justify-content: center !important; 
+    gap: 20px !important;             
 }
+
 
 .resume-page-fix .content, 
 .resume-page-fix .image-area {
     flex: 0 1 auto !important;
     width: auto !important;
-    max-width: 400px;
-    margin: 0 !important;
+    max-width: 400px;         
+    margin: 0 !important;     
 }
+
 
 .resume-page-fix .content {
     max-width: 350px; 
 }
+
 
 .cta-buttons {
     margin-top: 30px;
@@ -507,7 +541,7 @@ button {
     background: white;
     padding: 30px;
     border-radius: 15px;
-    box-shadow: 15px 15px 0px rgba(196, 164, 132, 0.2);
+    box-shadow: 15px 15px 0px rgba(196, 164, 132, 0.2); 
 }
 
 .contact-form input, 
@@ -534,11 +568,15 @@ button {
     margin-top: 10px;
 }
 
+
 .image-area {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+
+
 
 .contact-layout-fix { 
     display: flex !important;
@@ -549,12 +587,14 @@ button {
     padding: 0 5%;
 }
 
+
 .contact-layout-fix .content {
     flex: 0 1 auto !important;        
     text-align: left;
     max-width: 400px;               
     margin: 0 !important;
 }
+
 
 .contact-layout-fix .image-area {
     flex: 0 1 auto !important;         
@@ -563,6 +603,8 @@ button {
     justify-content: center;
 }
 
+
 .contact-form {
     width: 350px;                     
+    
 }
